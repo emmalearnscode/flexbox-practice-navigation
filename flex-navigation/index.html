@@ -11,7 +11,13 @@
 
 <body>
     <div class="wrapper">
-        <nav class="flex-nav">
+
+        <header class="top">
+            <h1><a href="#">What the Flexbox?</a></h1>
+        </header>
+
+        <nav href="#" class="flex-nav">
+            <a class="toggleNav">Menu</a>
             <ul>
                 <li><a href="">Item 01</a></li>
                 <li><a href="">Item 02</a></li>
@@ -25,7 +31,39 @@
                 <li class="social"><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
             </ul>
         </nav>
+
+        <section class="hero">
+            <img src="https://source.unsplash.com/random" alt="">
+        </section>
+
+        <section class="details">
+            <p>A random amount of text</p>
+            <p>Just learning about flexbox here</p>
+        </section>
+
+        <section class="signup">
+            <form action="" class="signup">
+                <input type="text" placeholder="Your name">
+                <input type="email" name="" id="" placeholder="Email address">
+                <input type="submit" value="Sign me up!">
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; Emma Dawson</p>
+        </footer>
     </div>
+    
+<script>
+   const toggleNav = document.querySelector(".toggleNav");
+   const navUL = document.querySelector(".flex-nav ul")
+
+   toggleNav.addEventListener("click", function() {
+    navUL.classList.toggle("open");
+    
+   });
+</script>
+
 
 </body>
 
